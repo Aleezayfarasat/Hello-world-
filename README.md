@@ -85,6 +85,29 @@ if found_words:
     print(f"⚠ WARNING: This email may be a phishing attempt! Suspicious words found: {found_words}")
 else:
     print("✅ This email seems safe. (But always double-check!)")
+5. for improved output:import logging
+
+# Set up logging
+logging.basicConfig(filename='phishing_alerts.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+
+# List of suspicious keywords
+suspicious_words = ["urgent", "verify", "click here", "update account", "password", "login", "bank", "confirm", "prize"]
+
+# Function to check phishing keywords and log results
+def check_phishing_and_log(email_text):
+    found_words = [word for word in suspicious_words if word in email_text.lower()]
+    
+    if found_words:
+        alert_message = f"⚠ WARNING: This email may be a phishing attempt! Suspicious words found: {found_words}"
+        logging.info(alert_message)  # Log the suspicious email
+        return alert_message
+    else:
+        return "✅ This email seems safe. (But always double-check!)"
+
+# Input email text
+email_text = input("Paste the email text here:\n")
+result = check_phishing_and_log(email_text)
+print(result)
 ---
 
 ## 📧 Example
