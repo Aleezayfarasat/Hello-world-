@@ -72,7 +72,19 @@ A **simple Python tool** that:
 3. **Output:**
    - If found → Displays a **warning**.  
    - If not found → Marks the email as **safe**.
+4. code snipet:# List of suspicious keywords
+suspicious_words = ["urgent", "verify", "click here", "update account", "password", "login", "bank", "confirm"]
 
+# Input email text
+email_text = input("Paste the email text here:\n").lower()
+
+# Check for suspicious keywords
+found_words = [word for word in suspicious_words if word in email_text]
+
+if found_words:
+    print(f"⚠ WARNING: This email may be a phishing attempt! Suspicious words found: {found_words}")
+else:
+    print("✅ This email seems safe. (But always double-check!)")
 ---
 
 ## 📧 Example
