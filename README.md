@@ -1,19 +1,125 @@
-# Hello-world-
-The simple rule-based and keyword-based that is use to detect potentially malicious email use for phishing attack 
-# Simple Phishing Email Detector
-# By [Aleezay farasat]
+# UC San Diego Health Phishing Attack – Final Project (CS50 Introduction to Cybersecurity)
 
-# List of suspicious keywords
-suspicious_words = ["urgent", "verify", "click here", "update account", "password", "login", "bank", "confirm", "payment", "limited time"]
+**Author:** Aleezay Farasat  
+**Country:** Pakistan  
+**edX Username:** aleezay_farasat  
+**GitHub:** [aleezayfarasat](https://github.com/aleezayfarasat)  
+**Recorded on:** 16 August 2025  
+YouTube vedio:https://youtu.be/keu5TO0kLVc?si=yaJy4ILNNWsOJ0_o
+---
 
-print("=== Phishing Email Detector ===")
-email_text = input("Paste the email text here:\n").lower()
+## 📌 Project Overview
 
-# Check if any suspicious word appears in the email
-found_words = [word for word in suspicious_words if word in email_text]
+This project is my final submission for **CS50’s Introduction to Cybersecurity**.  
+My topic is the **UC San Diego Health phishing attack** from January 2024, covered in **Lecture 3** on phishing.  
 
-if found_words:
-    print("\n⚠ WARNING: This email may be a phishing attempt!")
-    print("Suspicious words found:", ", ".join(found_words))
-else:
-    print("\n✅ This email seems safe. (But always double-check!)")
+I chose this topic because I am a medical student, and it connects both to my academic field and my interest in cybersecurity. The project also includes a **simple Python phishing email detector** that scans emails for suspicious keywords and warns the user if the email may be unsafe.
+
+---
+
+## 📰 Case Background: UC San Diego Health Phishing Attack
+
+- **Date of Incident:** January 9–22, 2024  
+- **Cause:** Two employees clicked on malicious email links and entered their credentials.  
+- **Risk:** Exposure of sensitive patient information.  
+- **Investigation Completed:** February 2024  
+
+**Impact:**
+- Exposure of **confidential patient data**.
+- Threat to **privacy, trust, and reputation**.
+- Potential **financial losses** and operational disruption.
+- Highlighted the **critical need for cybersecurity in healthcare**.
+
+---
+
+## 🔍 How It Was Detected
+
+- Unusual email activity was spotted through **security monitoring**.  
+- Staff **reported suspicious messages**.  
+- Automated alerts flagged **potentially malicious links**.  
+- A quick IT response helped contain the threat.
+
+---
+
+## ⚠️ Key Vulnerabilities
+
+1. No robust **email filtering**.  
+2. **Password reuse** by staff.  
+3. **Human error** — clicking malicious links without verification.  
+
+---
+
+## 🛠️ My Project: Phishing Email Detector
+
+A **simple Python tool** that:
+- Scans the text of an email.  
+- Looks for suspicious keywords such as `urgent`, `click here`, `password`.  
+- Warns the user if the email may be a phishing attempt.  
+
+---
+
+### 💻 Technology Used
+
+- **Language:** Python  
+- **Environment:** CS50 IDE  
+
+---
+
+## 📂 How It Works
+
+1. **User enters** an email text into the program.  
+2. Program **checks** for predefined suspicious keywords.  
+3. **Output:**
+   - If found → Displays a **warning**.  
+   - If not found → Marks the email as **safe**.
+
+---
+
+## 📧 Example
+
+**Phishing Email Example:**
+- From an unverified sender.
+- Urgent or alarming tone.
+- Includes suspicious links.
+
+**Safe Email Example:**
+- From a trusted source.
+- Professional and clear tone.
+- No requests for sensitive data.
+
+---
+
+## 🚀 Future Improvements
+
+- Integrate **machine learning** for advanced phishing detection.  
+- Expand keyword and pattern database for better accuracy.  
+- Add **real-time alerts**.  
+- Improve **user interface** for better usability.
+
+---
+
+## 🛡️ Recommendations for Prevention
+
+1. **Raise awareness** among healthcare workers.  
+2. Use **multi-factor authentication** (MFA).  
+3. Apply **email filtering** and anti-phishing tools.  
+4. **Verify senders** before clicking links.
+
+---
+
+## 📚 Lessons Learned
+
+- Writing basic Python code.  
+- Searching for text patterns.  
+- Understanding the **cybersecurity risks** in healthcare.  
+
+> **Conclusion:** Even simple tools can play an important role in defending against phishing. Awareness is the strongest defense — knowledge is an asset in any field.
+
+---
+
+## 📂 Repository
+
+This repository contains:
+- Python code for the phishing detector.
+- Example phishing and safe emails.
+- Documentation of the UC San Diego Health phishing attack case.
