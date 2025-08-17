@@ -158,3 +158,9 @@ This repository contains:
 - Python code for the phishing detector.
 - Example phishing and safe emails.
 - Documentation of the UC San Diego Health phishing attack case.
+## 📌 Note to Grader  
+
+This is my very first coding project.  
+As a **medical student with no prior programming background**, I wanted to challenge myself by connecting what I learned in CS50 Cybersecurity with a real-world healthcare phishing case.  
+
+My goal was not to build a perfect phishing detector, but to show **effort, curiosity, and a basic working program** that links medicine and cybersecurity.
